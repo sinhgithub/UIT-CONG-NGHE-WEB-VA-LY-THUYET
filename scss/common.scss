@@ -1,0 +1,61 @@
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  el: 1200px,
+  eel: 1400px
+);
+
+@mixin sm {
+  @media (min-width: map-get($breakpoints, sm)) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: map-get($breakpoints, md)) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: map-get($breakpoints, lg)) {
+    @content;
+  }
+}
+
+@mixin el {
+  @media (min-width: map-get($breakpoints, el)) {
+    @content;
+  }
+}
+
+@mixin eel {
+  @media (min-width: map-get($breakpoints, eel)) {
+    @content;
+  }
+}
+$fontSize: 12px;
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: $fontSize;
+  @include sm {
+    font-size: calc(#{$fontSize} + 2px);
+  }
+  @include md {
+    font-size: calc(#{$fontSize} + 4px);
+  }
+  @include lg {
+    font-size: calc(#{$fontSize} + 6px);
+  }
+  @include el {
+    font-size: calc(#{$fontSize} + 8px);
+  }
+  @include eel {
+    font-size: calc(#{$fontSize} + 10px);
+  }
+}

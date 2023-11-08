@@ -1,0 +1,16 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet" href="./css/style.css")
+    title Giới thiệu mèo
+  body
+    main
+      h1.title Các mèo của năm
+      - var listCat = [{name: 'Mèo 1',image: 'https://placekitten.com/200/200'},{name: 'Mèo 2',image: 'https://placekitten.com/200/200'},{name: 'Mèo 3',image: 'https://placekitten.com/200/200'}, {name: 'Mèo 4',image: 'https://placekitten.com/200/200'}, {name: 'Mèo 5',image: 'https://placekitten.com/200/200'}, {name: 'Mèo 6',image: 'https://placekitten.com/200/200'}, {name: 'Mèo 7',image: 'https://placekitten.com/200/200'}]
+      div.list-cat
+        each cat, index in listCat
+          div.item-cat
+            img(src=cat.image)
+            span Mèo #{index + 1}
