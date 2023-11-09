@@ -43,6 +43,7 @@ html {
 
               & th {
                 height: 55px;
+
                 & span {
                   @include lg {
                     font-size: 0.85rem;

@@ -1,5 +1,6 @@
 @mixin h1Text {
   font-size: 1.4rem;
+
   @include sm {
     font-size: 1.5rem;
   }
@@ -7,6 +8,7 @@
 
 @mixin h2Text {
   font-size: 1.3rem;
+
   @include sm {
     font-size: 1.4rem;
   }
@@ -14,6 +16,7 @@
 
 @mixin h3Text {
   font-size: 1.1rem;
+
   @include sm {
     font-size: 1.2rem;
   }
