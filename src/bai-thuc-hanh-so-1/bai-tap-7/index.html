@@ -1,1 +1,144 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="./css/style.css"><title>Bài thực hành 1 - Bài tập 7</title></head><body><main><section><div class="content"><form action=""><h1>Phiếu đăng ký tour du lịch</h1><div class="table"><div class="table__content"><div class="table-body"><span class="table-body__item">Họ và tên khách</span><div class="table-body__item"><input class="input-text" type="text" name="fullname" id="fullname" placeholder="Nguyễn Văn A"></div></div><div class="table-body"><span class="table-body__item">Địa chỉ</span><div class="table-body__item"><input class="input-address" type="text" name="address" id="address" placeholder="abc, xyz, jqk"></div></div><div class="table-body"><span class="table-body__item">Điện thoại</span><div class="table-body__item"><input class="input-text" type="text" name="phone" id="phone" placeholder="09xxxxxxxx"></div></div><div class="table-body tour"><span class="table-body__item">Tour</span><div class="table-body__item"><select class="select"><option class="select__item active" value=""><span class="select__item--content">Chọn tour</span></option><option class="select__item active" value="10000000đ"><span class="select__item--content">Hà Nội - Hạ Long - Tuần Châu</span></option><option class="select__item" value="6000000đ"><span class="select__item--content">Hà Nội - Sapa</span></option><option class="select__item" value="3000000đ"><span class="select__item--content">Đà Nẵng, Hội An</span></option><option class="select__item" value="2000000đ"><span class="select__item--content">Buôn Mê Thuộc - Kontum</span></option><option class="select__item" value="3500000đ"><span class="select__item--content">TP. HCM - Nha Trang</span></option><option class="select__item" value="2500000đ"><span class="select__item--content">TP. HCM - Cần Thơ - Cà Mau</span></option></select></div></div><div class="table-body customer-count"><div class="table-body__item"><div class="bordered-box"><div class="label">Số lượng đoàn khách </div><div class="inputs"><div class="input"><label for="adult">Người lớn</label><input class="input-text" type="number" name="adult" id="adult" placeholder="1"></div><div class="input"><label for="child">Trẻ em</label><input class="input-text" type="number" name="child" id="child" placeholder="0"></div></div></div></div></div><div class="table-body note"><span class="table-body__item">Ghi chú</span><div class="table-body__item"><textarea class="input-textarea" type="textarea" name="note" id="note" placeholder="Ghi chú"></textarea></div></div><div class="table-body"><div class="table-body__item disable-border-bottom"><button type="submit">Đăng ký</button></div></div></div></div></form></div></section></main></body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Bài thực hành 1 - Bài tập 7</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="content">
+          <form action="">
+            <h1>Phiếu đăng ký tour du lịch</h1>
+            <div class="table">
+              <div class="table__content">
+                <div class="table-body">
+                  <span class="table-body__item">Họ và tên khách</span>
+                  <div class="table-body__item">
+                    <input
+                      class="input-text"
+                      type="text"
+                      name="fullname"
+                      id="fullname"
+                      placeholder="Nguyễn Văn A"
+                    />
+                  </div>
+                </div>
+                <div class="table-body">
+                  <span class="table-body__item">Địa chỉ</span>
+                  <div class="table-body__item">
+                    <input
+                      class="input-address"
+                      type="text"
+                      name="address"
+                      id="address"
+                      placeholder="abc, xyz, jqk"
+                    />
+                  </div>
+                </div>
+                <div class="table-body">
+                  <span class="table-body__item">Điện thoại</span>
+                  <div class="table-body__item">
+                    <input
+                      class="input-text"
+                      type="text"
+                      name="phone"
+                      id="phone"
+                      placeholder="09xxxxxxxx"
+                    />
+                  </div>
+                </div>
+                <div class="table-body tour">
+                  <span class="table-body__item">Tour</span>
+                  <div class="table-body__item">
+                    <select class="select">
+                      <option class="select__item active" value="">
+                        <span class="select__item--content">Chọn tour</span>
+                      </option>
+                      <option class="select__item active" value="10000000đ">
+                        <span class="select__item--content"
+                          >Hà Nội - Hạ Long - Tuần Châu</span
+                        >
+                      </option>
+                      <option class="select__item" value="6000000đ">
+                        <span class="select__item--content">Hà Nội - Sapa</span>
+                      </option>
+                      <option class="select__item" value="3000000đ">
+                        <span class="select__item--content"
+                          >Đà Nẵng, Hội An</span
+                        >
+                      </option>
+                      <option class="select__item" value="2000000đ">
+                        <span class="select__item--content"
+                          >Buôn Mê Thuộc - Kontum</span
+                        >
+                      </option>
+                      <option class="select__item" value="3500000đ">
+                        <span class="select__item--content"
+                          >TP. HCM - Nha Trang</span
+                        >
+                      </option>
+                      <option class="select__item" value="2500000đ">
+                        <span class="select__item--content"
+                          >TP. HCM - Cần Thơ - Cà Mau</span
+                        >
+                      </option>
+                    </select>
+                  </div>
+                </div>
+                <div class="table-body customer-count">
+                  <div class="table-body__item">
+                    <div class="bordered-box">
+                      <div class="label">Số lượng đoàn khách</div>
+                      <div class="inputs">
+                        <div class="input">
+                          <label for="adult">Người lớn</label
+                          ><input
+                            class="input-text"
+                            type="number"
+                            name="adult"
+                            id="adult"
+                            placeholder="1"
+                          />
+                        </div>
+                        <div class="input">
+                          <label for="child">Trẻ em</label
+                          ><input
+                            class="input-text"
+                            type="number"
+                            name="child"
+                            id="child"
+                            placeholder="0"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-body note">
+                  <span class="table-body__item">Ghi chú</span>
+                  <div class="table-body__item">
+                    <textarea
+                      class="input-textarea"
+                      type="textarea"
+                      name="note"
+                      id="note"
+                      placeholder="Ghi chú"
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="table-body">
+                  <div class="table-body__item disable-border-bottom">
+                    <button type="submit">Đăng ký</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

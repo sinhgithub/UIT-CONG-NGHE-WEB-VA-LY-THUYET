@@ -153,6 +153,7 @@ html {
                   &.tour {
                     & .table-body__item {
                       overflow: hidden;
+
                       & .select {
                         width: 70%;
                         overflow-x: hidden;
@@ -162,6 +163,7 @@ html {
                         height: 35px;
                         outline: none;
                         cursor: pointer;
+
                         &__item {
                           background-color: #fff;
                           cursor: pointer;
@@ -185,14 +187,16 @@ html {
 
                   &.note {
                     height: 110px;
+
                     & .table-body__item {
                       height: 110px;
+
                       &:last-child {
                         & textarea {
                           width: 100%;
                           max-width: 100%;
                           height: 100px;
-                          vertical-align:top;
+                          vertical-align: top;
                           outline: none;
                           padding: 5px;
                           border: none;
@@ -203,15 +207,18 @@ html {
                       }
                     }
                   }
-                  &.customer-count{
+
+                  &.customer-count {
                     height: 105px;
-                    & .table-body__item{
+
+                    & .table-body__item {
                       width: 100%;
                       height: 105px;
                       display: flex;
                       align-items: center;
                       border-left: 0;
-                      & .bordered-box{
+
+                      & .bordered-box {
                         border: 1px solid gray;
                         height: 80px;
                         width: 100%;
@@ -221,10 +228,12 @@ html {
                         padding: 0px 20px;
                         position: relative;
                         margin-top: 10px;
-                        @include md{
+
+                        @include md {
                           width: 70%;
                         }
-                        & .label{
+
+                        & .label {
                           margin-bottom: 10px;
                           position: absolute;
                           top: -10px;
@@ -232,16 +241,20 @@ html {
                           background-color: #ffdd99;
                           padding: 0px 10px;
                         }
-                        & .inputs{
+
+                        & .inputs {
                           display: flex;
-                          & .input{
+
+                          & .input {
                             display: flex;
                             align-items: center;
                             gap: 10px;
-                            &:last-child{
+
+                            &:last-child {
                               margin-left: 10px;
                             }
-                            & input{
+
+                            & input {
                               width: 60px;
                               border: 1px solid gray;
                               padding: 0px 10px;
