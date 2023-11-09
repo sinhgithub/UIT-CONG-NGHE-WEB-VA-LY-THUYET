@@ -5,40 +5,40 @@
   "main": "index.js",
   "scripts": {
     "TH1PugBT1": "pug --watch ./pugs/TH1PugBT1/index.pug --out ./src/bai-thuc-hanh-so-1/bai-tap-1",
-    "TH1SassBT1": "sass --no-source-map ./scss/TH1PugBT1/style.scss ./src/bai-thuc-hanh-so-1/bai-tap-1/css/style.css --watch",
+    "TH1SassBT1": "sass --no-source-map ./scss/TH1SassBT1/style.scss ./src/bai-thuc-hanh-so-1/bai-tap-1/css/style.css --watch",
 
     "TH1PugBT2": "pug --watch ./pugs/TH1PugBT2/index.pug --out ./src/bai-thuc-hanh-so-1/bai-tap-2",
-    "TH1SassBT2": "sass --no-source-map ./scss/TH1PugBT2/style.scss ./src/bai-thuc-hanh-so-1/bai-tap-2/css/style.css --watch",
+    "TH1SassBT2": "sass --no-source-map ./scss/TH1SassBT2/style.scss ./src/bai-thuc-hanh-so-1/bai-tap-2/css/style.css --watch",
 
     "TH1PugBT3": "pug --watch ./pugs/TH1PugBT3/index.pug --out ./src/bai-thuc-hanh-so-1/bai-tap-3",
-    "TH1SassBT3": "sass --no-source-map ./scss/TH1PugBT3/style.scss ./src/bai-thuc-hanh-so-1/bai-tap-3/css/style.css --watch",
+    "TH1SassBT3": "sass --no-source-map ./scss/TH1SassBT3/style.scss ./src/bai-thuc-hanh-so-1/bai-tap-3/css/style.css --watch",
 
     "TH1PugBT4": "pug --watch ./pugs/TH1PugBT4/index.pug --out ./src/bai-thuc-hanh-so-1/bai-tap-4",
-    "TH1SassBT4": "sass --no-source-map ./scss/TH1PugBT4/style.scss ./src/bai-thuc-hanh-so-1/bai-tap-4/css/style.css --watch",
+    "TH1SassBT4": "sass --no-source-map ./scss/TH1SassBT4/style.scss ./src/bai-thuc-hanh-so-1/bai-tap-4/css/style.css --watch",
 
     "TH1PugBT5": "pug --watch ./pugs/TH1PugBT5/index.pug --out ./src/bai-thuc-hanh-so-1/bai-tap-5",
-    "TH1SassBT5": "sass --no-source-map ./scss/TH1PugBT5/style.scss ./src/bai-thuc-hanh-so-1/bai-tap-5/css/style.css --watch",
+    "TH1SassBT5": "sass --no-source-map ./scss/TH1SassBT5/style.scss ./src/bai-thuc-hanh-so-1/bai-tap-5/css/style.css --watch",
 
     "TH1PugBT6": "pug --watch ./pugs/TH1PugBT6/index.pug --out ./src/bai-thuc-hanh-so-1/bai-tap-6",
-    "TH1SassBT6": "sass --no-source-map ./scss/TH1PugBT6/style.scss ./src/bai-thuc-hanh-so-1/bai-tap-6/css/style.css --watch",
+    "TH1SassBT6": "sass --no-source-map ./scss/TH1SassBT6/style.scss ./src/bai-thuc-hanh-so-1/bai-tap-6/css/style.css --watch",
 
     "TH1PugBT7": "pug --watch ./pugs/TH1PugBT7/index.pug --out ./src/bai-thuc-hanh-so-1/bai-tap-7",
-    "TH1SassBT7": "sass --no-source-map ./scss/TH1PugBT7/style.scss ./src/bai-thuc-hanh-so-1/bai-tap-7/css/style.css --watch",
+    "TH1SassBT7": "sass --no-source-map ./scss/TH1SassBT7/style.scss ./src/bai-thuc-hanh-so-1/bai-tap-7/css/style.css --watch",
     
     "TH1PugBT8": "pug --watch ./pugs/TH1PugBT8/index.pug --out ./src/bai-thuc-hanh-so-1/bai-tap-8",
-    "TH1SassBT8": "sass --no-source-map ./scss/TH1PugBT8/style.scss ./src/bai-thuc-hanh-so-1/bai-tap-8/css/style.css --watch",
+    "TH1SassBT8": "sass --no-source-map ./scss/TH1SassBT8/style.scss ./src/bai-thuc-hanh-so-1/bai-tap-8/css/style.css --watch",
 
     "TH1PugBT9": "pug --watch ./pugs/TH1PugBT9/index.pug --out ./src/bai-thuc-hanh-so-1/bai-tap-9",
-    "TH1SassBT9": "sass --no-source-map ./scss/TH1PugBT9/style.scss ./src/bai-thuc-hanh-so-1/bai-tap-9/css/style.css --watch",
+    "TH1SassBT9": "sass --no-source-map ./scss/TH1SassBT9/style.scss ./src/bai-thuc-hanh-so-1/bai-tap-9/css/style.css --watch",
 
     "TH1PugBT10": "pug --watch ./pugs/TH1PugBT10/index.pug --out ./src/bai-thuc-hanh-so-1/bai-tap-10",
-    "TH1SassBT10": "sass --no-source-map ./scss/TH1PugBT10/style.scss ./src/bai-thuc-hanh-so-1/bai-tap-10/css/style.css --watch",
+    "TH1SassBT10": "sass --no-source-map ./scss/TH1SassBT10/style.scss ./src/bai-thuc-hanh-so-1/bai-tap-10/css/style.css --watch",
 
     "TH1PugBT11": "pug --watch ./pugs/TH1PugBT11/index.pug --out ./src/bai-thuc-hanh-so-1/bai-tap-11",
-    "TH1SassBT11": "sass --no-source-map ./scss/TH1PugBT11/style.scss ./src/bai-thuc-hanh-so-1/bai-tap-11/css/style.css --watch",
+    "TH1SassBT11": "sass --no-source-map ./scss/TH1SassBT11/style.scss ./src/bai-thuc-hanh-so-1/bai-tap-11/css/style.css --watch",
 
-    "HomeExercisePug": "pug --watch ./pugs/HomeExercise/index.pug --out ./src/bai-thuc-hanh-so-1/HomeExercise",
-    "HomeExerciseSass": "sass --no-source-map ./scss/HomeExercise/style.scss ./src/bai-thuc-hanh-so-1/HomeExercise/css/style.css --watch"
+    "HomeExercisePug": "pug --watch ./pugs/HomeExercisePug/index.pug --out ./src/bai-thuc-hanh-so-1/HomeExercisePug",
+    "HomeExerciseSass": "sass --no-source-map ./scss/HomeExerciseSass/style.scss ./src/bai-thuc-hanh-so-1/HomeExerciseSass/css/style.css --watch"
   },
   "author": "",
   "license": "ISC",
