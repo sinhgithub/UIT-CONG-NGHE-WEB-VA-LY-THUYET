@@ -1,0 +1,63 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet" href="./css/style.css")
+    title Bài thực hành 1 - Bài tập 5
+  body
+    main
+      section
+        .content
+          form(action="")
+            h1 Phiếu đăng ký tham gia dự thưởng
+            .table
+              .table__content
+                .table-body
+                  span.table-body__item Họ và tên
+                  .table-body__item
+                    input.input-text(type="text" name="fullname" id="fullname" placeholder="Nguyễn Văn A")
+                .table-body
+                  span.table-body__item Địa chỉ
+                  .table-body__item
+                    input.input-address(type="text" name="address" id="address" placeholder="abc, xyz, jqk")
+                .table-body
+                  span.table-body__item Điện thoại
+                  .table-body__item
+                    input.input-text(type="text" name="phone" id="phone" placeholder="09xxxxxxxx")
+                .table-body
+                  span.table-body__item Giới tính
+                  .table-body__item
+                    .male
+                      input.input-gender-radio(type="radio" name="gender-male" id="gender-male" checked)
+                      label(for="gender-male") Nam
+                    .female
+                      input.input-gender-radio(type="radio" name="gender-female" id="gender-female")
+                      label(for="gender-female") Nữ
+                .table-body.product
+                  span.table-body__item Sản phẩm
+                  .table-body__item
+                    .select
+                      .select__item.active
+                        span.select__item--content  Iphone 13 Promax
+                      .select__item
+                        span.select__item--content Iphone 12
+                      .select__item
+                        span.select__item--content Iphone 11
+                      .select__item
+                        span.select__item--content Iphone 2
+                      .select__item
+                        span.select__item--content Iphone 1
+                      .select__item
+                        span.select__item--content Iphone X
+                      .select__item
+                        span.select__item--content Iphone 8
+                      .select__item
+                        span.select__item--content Iphone 7
+                .table-body
+                  span.table-body__item Số dự đoán
+                  .table-body__item
+                    input.input-text(type="number" name="number" id="number" placeholder="Số dự đoán" value=5)
+                .table-body
+                  .table-body__item.disable-border-bottom
+                    button(type="submit") Đăng ký
