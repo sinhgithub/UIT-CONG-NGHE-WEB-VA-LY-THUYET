@@ -119,6 +119,15 @@ html body main section .content form table tbody tr td input {
 html body main section .content form table tbody tr td input:hover {
   outline: none;
 }
+html body main section .content form table tbody tr td span.label {
+  display: block;
+  min-width: 130px;
+}
+@media (min-width: 768px) {
+  html body main section .content form table tbody tr td span.label {
+    min-width: 150px;
+  }
+}
 html body main section .content form table tbody tr:last-child {
   width: 100%;
 }
