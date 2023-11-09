@@ -1,0 +1,180 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+@import "../common.scss";
+
+* {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+
+  @include sm {
+    font-size: 16px;
+  }
+
+  @include md {
+    font-size: 16px;
+  }
+
+  @include lg {
+    font-size: 16px;
+  }
+
+  @include el {
+    font-size: 16px;
+  }
+
+  ;
+
+  @include eel {
+    font-size: 16px;
+  }
+
+  ;
+}
+
+html {
+  width: 100vw;
+  min-height: 100vh;
+
+  body {
+    width: 100%;
+    height: 100%;
+    background-color: #ffedca;
+
+    main {
+      max-width: map-get($breakpoints, el);
+      width: 100%;
+      margin: 0 auto;
+      padding: $spacingBasicRem;
+
+      & section {
+        width: 100%;
+
+        & .content {
+          min-width: 350px;
+          max-width: 800px;
+          width: 100%;
+          margin: 0 auto;
+          display: flex;
+          padding: $spacingBasicRem;
+
+          & .image {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            overflow: hidden;
+
+            @include sm {
+              width: 100px;
+              height: 100px;
+            }
+
+            @include md {
+              width: 130px;
+              height: 130px;
+            }
+
+            & img {
+              width: 70px;
+              height: 70px;
+              border-radius: 50%;
+              object-fit: cover;
+              overflow: hidden;
+
+              @include sm {
+                width: 100px;
+                height: 100px;
+              }
+
+              @include md {
+                width: 130px;
+                height: 130px;
+              }
+            }
+          }
+
+          & .menu {
+            flex: 1;
+
+            & h1 {
+              @include h1Text;
+              text-align: center;
+              color: rgb(125, 56, 210);
+              margin-bottom: $spacingBasicRem;
+            }
+
+            & .menu__content {
+              border: 1px solid gray;
+
+              & .table-head {
+                display: flex;
+                background-color: #cc6600;
+
+                &__item:first-child {
+                  width: 50px;
+                }
+
+                &__item:last-child {
+                  flex: 1;
+                  border-left: 1px solid gray;
+                  border-bottom: 1px solid gray;
+                }
+
+                &__item {
+                  color: white;
+                  font-weight: bold;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  height: 30px;
+                }
+              }
+
+              & .table-body {
+                display: flex;
+
+                &__item:first-child {
+                  width: 50px;
+                  border-bottom: 1px solid gray;
+
+                  &.disable-border-bottom {
+                    border-bottom: none;
+                  }
+                }
+
+                &__item:last-child {
+                  flex: 1;
+                  border-left: 1px solid gray;
+                  border-bottom: 1px solid gray;
+
+                  &.disable-border-bottom {
+                    border-bottom: none;
+                  }
+                }
+
+                &__item {
+                  height: 30px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+
+                  &.flex-start {
+                    justify-content: flex-start;
+                    padding: 0px $spacingBasicRem;
+                  }
+                }
+
+                &.color-background {
+                  background-color: #ffedca;
+                }
+
+                &.white-background {
+                  background-color: white;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

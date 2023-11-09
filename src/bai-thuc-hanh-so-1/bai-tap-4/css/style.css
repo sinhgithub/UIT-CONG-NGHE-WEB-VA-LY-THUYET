@@ -1,0 +1,196 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 12px;
+}
+@media (min-width: 576px) {
+  * {
+    font-size: calc(12px + 2px);
+  }
+}
+@media (min-width: 768px) {
+  * {
+    font-size: calc(12px + 4px);
+  }
+}
+@media (min-width: 992px) {
+  * {
+    font-size: calc(12px + 6px);
+  }
+}
+@media (min-width: 1200px) {
+  * {
+    font-size: calc(12px + 8px);
+  }
+}
+@media (min-width: 1400px) {
+  * {
+    font-size: calc(12px + 10px);
+  }
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+@media (min-width: 576px) {
+  * {
+    font-size: 16px;
+  }
+}
+@media (min-width: 768px) {
+  * {
+    font-size: 16px;
+  }
+}
+@media (min-width: 992px) {
+  * {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1200px) {
+  * {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1400px) {
+  * {
+    font-size: 16px;
+  }
+}
+
+html {
+  width: 100vw;
+  min-height: 100vh;
+}
+html body {
+  width: 100%;
+  height: 100%;
+  background-color: #ffedca;
+}
+html body main {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+html body main section {
+  width: 100%;
+}
+html body main section .content {
+  min-width: 350px;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  padding: 1rem;
+}
+html body main section .content .image {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+@media (min-width: 576px) {
+  html body main section .content .image {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media (min-width: 768px) {
+  html body main section .content .image {
+    width: 130px;
+    height: 130px;
+  }
+}
+html body main section .content .image img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  overflow: hidden;
+}
+@media (min-width: 576px) {
+  html body main section .content .image img {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media (min-width: 768px) {
+  html body main section .content .image img {
+    width: 130px;
+    height: 130px;
+  }
+}
+html body main section .content .menu {
+  flex: 1;
+}
+html body main section .content .menu h1 {
+  font-size: 1.4rem;
+  text-align: center;
+  color: rgb(125, 56, 210);
+  margin-bottom: 1rem;
+}
+@media (min-width: 576px) {
+  html body main section .content .menu h1 {
+    font-size: 1.5rem;
+  }
+}
+html body main section .content .menu .menu__content {
+  border: 1px solid gray;
+}
+html body main section .content .menu .menu__content .table-head {
+  display: flex;
+  background-color: #cc6600;
+}
+html body main section .content .menu .menu__content .table-head__item:first-child {
+  width: 50px;
+}
+html body main section .content .menu .menu__content .table-head__item:last-child {
+  flex: 1;
+  border-left: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+html body main section .content .menu .menu__content .table-head__item {
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+}
+html body main section .content .menu .menu__content .table-body {
+  display: flex;
+}
+html body main section .content .menu .menu__content .table-body__item:first-child {
+  width: 50px;
+  border-bottom: 1px solid gray;
+}
+html body main section .content .menu .menu__content .table-body__item:first-child.disable-border-bottom {
+  border-bottom: none;
+}
+html body main section .content .menu .menu__content .table-body__item:last-child {
+  flex: 1;
+  border-left: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+html body main section .content .menu .menu__content .table-body__item:last-child.disable-border-bottom {
+  border-bottom: none;
+}
+html body main section .content .menu .menu__content .table-body__item {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html body main section .content .menu .menu__content .table-body__item.flex-start {
+  justify-content: flex-start;
+  padding: 0px 1rem;
+}
+html body main section .content .menu .menu__content .table-body.color-background {
+  background-color: #ffedca;
+}
+html body main section .content .menu .menu__content .table-body.white-background {
+  background-color: white;
+}
