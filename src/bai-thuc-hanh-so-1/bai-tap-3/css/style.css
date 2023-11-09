@@ -1,0 +1,154 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 12px;
+}
+@media (min-width: 576px) {
+  * {
+    font-size: calc(12px + 2px);
+  }
+}
+@media (min-width: 768px) {
+  * {
+    font-size: calc(12px + 4px);
+  }
+}
+@media (min-width: 992px) {
+  * {
+    font-size: calc(12px + 6px);
+  }
+}
+@media (min-width: 1200px) {
+  * {
+    font-size: calc(12px + 8px);
+  }
+}
+@media (min-width: 1400px) {
+  * {
+    font-size: calc(12px + 10px);
+  }
+}
+
+@media (min-width: 992px) {
+  * {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1200px) {
+  * {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1400px) {
+  * {
+    font-size: 16px;
+  }
+}
+
+html {
+  width: 100vw;
+  min-height: 100vh;
+}
+html body {
+  width: 100%;
+  height: 100%;
+}
+html body main {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+html body main section {
+  width: 100%;
+}
+html body main section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 350px;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgb(182, 215, 228);
+}
+html body main section form h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+html body main section form .input {
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+html body main section form .input label {
+  display: block;
+  min-width: 120px;
+  font-size: 1.3rem;
+}
+@media (min-width: 992px) {
+  html body main section form .input label {
+    min-width: 140px;
+  }
+}
+html body main section form .input input {
+  flex: 1;
+  height: 35px;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+}
+html body main section form .input input:focus {
+  outline: none;
+}
+@media (min-width: 992px) {
+  html body main section form .input input {
+    flex: 0.9;
+  }
+}
+html body main section form .buttons {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+@media (min-width: 992px) {
+  html body main section form .buttons {
+    width: 75%;
+  }
+}
+html body main section form .buttons input {
+  width: 150px;
+  height: 35px;
+  border: 1px solid gray;
+  background-color: #ccc;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+html body main section form .buttons input:hover {
+  background-color: #999;
+}
+html body main section form .result {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+html body main section form .result label {
+  display: block;
+  min-width: 120px;
+  font-size: 1.3rem;
+}
+html body main section form .result input {
+  flex: 1;
+  height: 35px;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+}
+html body main section form .result input:focus {
+  outline: none;
+}

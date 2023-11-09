@@ -1,0 +1,118 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+@import "../common.scss";
+
+*{
+  @include lg {
+    font-size: 16px;
+  };
+  @include el {
+    font-size: 16px;
+  };
+  @include eel {
+    font-size: 16px;
+  };
+}
+
+html {
+  width: 100vw;
+  min-height: 100vh;
+
+  body {
+    width: 100%;
+    height: 100%;
+    
+    main {
+      max-width: map-get($breakpoints, el);
+      width: 100%;
+      margin: 0 auto;
+      padding: $spacingBasicRem;
+      & section {
+        width: 100%;
+        & form {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          min-width: 350px;
+          max-width: 500px;
+          width: 100%;
+          margin: 0 auto;
+          padding: 20px;
+          background-color: rgb(182,215,228);
+          & h2{
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+          }
+          & .input{
+            width: 100%;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            & label{
+              display: block;
+              min-width: 120px;
+              font-size: 1.3rem;
+              @include lg {
+                min-width: 140px;
+              };
+            }
+            & input{
+              flex:1;
+              height: 35px;
+              padding: 0 10px;
+              border: 1px solid #ccc;
+              &:focus{
+                outline: none;
+              }
+              @include lg {
+                flex:.9;
+              };
+            }
+          }
+          & .buttons{
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            margin-top: 10px;
+            @include lg {
+              width: 75%;
+            };
+            & input{
+              width: 150px;
+              height: 35px;
+              border: 1px solid gray;
+              background-color: #ccc;
+              cursor: pointer;
+              font-size: 1.2rem;
+              &:hover{
+                background-color: #999;
+              }
+            }
+          }
+          & .result{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            & label{
+              display: block;
+              min-width: 120px;
+              font-size: 1.3rem;
+            }
+            & input{
+              flex:1;
+              height: 35px;
+              padding: 0 10px;
+              border: 1px solid #ccc;
+              &:focus{
+                outline: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -8,7 +8,10 @@
     "TH1SassBT1": "sass --no-source-map ./scss/TH1PugBT1/style.scss ./src/bai-thuc-hanh-so-1/bai-tap-1/css/style.css --watch",
 
     "TH1PugBT2": "pug --watch ./pugs/TH1PugBT2/index.pug --out ./src/bai-thuc-hanh-so-1/bai-tap-2",
-    "TH1SassBT2": "sass --no-source-map ./scss/TH1PugBT2/style.scss ./src/bai-thuc-hanh-so-1/bai-tap-2/css/style.css --watch"
+    "TH1SassBT2": "sass --no-source-map ./scss/TH1PugBT2/style.scss ./src/bai-thuc-hanh-so-1/bai-tap-2/css/style.css --watch",
+
+    "TH1PugBT3": "pug --watch ./pugs/TH1PugBT3/index.pug --out ./src/bai-thuc-hanh-so-1/bai-tap-3",
+    "TH1SassBT3": "sass --no-source-map ./scss/TH1PugBT3/style.scss ./src/bai-thuc-hanh-so-1/bai-tap-3/css/style.css --watch"
   },
   "author": "",
   "license": "ISC",

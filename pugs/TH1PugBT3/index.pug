@@ -1,0 +1,26 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet" href="./css/style.css")
+    title Bài thực hành 1 - Bài tập 2
+  body
+    main
+      section
+        form(method="POST" action="")
+          h2 Máy tính
+          .input
+            label(for="number1") Số thứ nhất
+            input(type="number" name="number1" id="number1" placeholder="Nhập số thứ nhất")
+          .input
+            label(for="number2") Số thứ hai
+            input(type="number" name="number2" id="number2" placeholder="Nhập số thứ hai")
+          .buttons
+            input(type="button" id="btnAdd" value="Cộng" readonly) 
+            input(type="button" id="btnSub" value="Trừ" readonly)
+            input(type="button" id="btnMul" value="Nhân" readonly)
+            input(type="button" id="btnDiv" value="Chia" readonly)
+          .result
+            label(for="result") Kết quả
+            input(type="text" name="result" id="result" readonly)
