@@ -1,7 +1,77 @@
-doctype html
-html(lang="en")
-  head
-    meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title Giới thiệu mèo
-  body 
+@import "../variables.scss";
+@import "../mixins.scss";
+@import "../common.scss";
+
+html {
+  width: 100vw;
+  min-height: 100vh;
+
+  body {
+    width: 100%;
+    height: 100%;
+
+    main {
+      max-width: map-get($breakpoints, el);
+      width: 100%;
+      margin: 0 auto;
+      padding: $spacingBasicRem;
+
+      & section {
+        width: 550px;
+        background-image: url("../BTTH1_Hinh2/table-bg.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        margin: 0 auto;
+
+        & .layer {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: rgba(255, 255, 255, 0.573);
+        }
+
+        & table {
+          width: 100%;
+          position: relative;
+          z-index: 2;
+
+          & tbody {
+            & .tr-head {
+              height: 55px;
+
+              & th {
+                & span {
+                  @include lg {
+                    font-size: 0.85rem;
+                  }
+                }
+              }
+            }
+
+            & .tr-content {
+              & td {
+                width: 25%;
+
+                & img {
+                  width: 100%;
+                }
+
+                & span {
+                  text-align: center;
+                  display: block;
+
+                  @include lg {
+                    font-size: 0.8rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -2,6 +2,22 @@ doctype html
 html(lang="en")
   head
     meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title Giới thiệu mèo
-  body 
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet" href="./css/style.css")
+    title Bài thực hành 1 - Bài tập 2
+  body
+    main
+      section
+        .layer
+        table(border="1" align="center")
+          tbody
+            tr.tr-head
+              th(colspan=4)
+                span List random Animal images
+            - var listImage = [{id:"tr1",data: [{src: "./BTTH1_Hinh2/h1.png",alt: "Animal 1",name: "Animal 1",},{src: "./BTTH1_Hinh2/h2.png",alt: "Animal 2",name: "Animal 2",},{src: "./BTTH1_Hinh2/h3.png",alt: "Animal 3",name: "Animal 3",},{src: "./BTTH1_Hinh2/h4.png",alt: "Animal 4",name: "Animal 4",},]},{id: "2",data: [{src: "./BTTH1_Hinh2/h5.png",alt: "Animal 5",name: "Animal 5",},{src: "./BTTH1_Hinh2/h6.png",alt: "Animal 6",name: "Animal 6",},{src: "./BTTH1_Hinh2/h7.png",alt: "Animal 7",name: "Animal 7",},{src: "./BTTH1_Hinh2/h8.png",alt: "Animal 8",name: "Animal 8",}]}]
+            each item in listImage
+              tr.tr-content(id=item.id)
+                each item2 in item.data
+                  td
+                    img(src=item2.src alt=item2.alt)
+                    span #{item2.name}
