@@ -4,17 +4,17 @@ html(lang="en")
     meta(charset="UTF-8")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
     link(rel="stylesheet" href="./css/style.css")
-    title Bài thực hành 1 - Bài tập 5
+    title Bài thực hành 1 - Bài tập 7
   body
     main
       section
         .content
           form(action="")
-            h1 Phiếu đăng ký tham gia dự thưởng
+            h1 Phiếu đăng ký tour du lịch
             .table
               .table__content
                 .table-body
-                  span.table-body__item Họ và tên
+                  span.table-body__item Họ và tên khách
                   .table-body__item
                     input.input-text(type="text" name="fullname" id="fullname" placeholder="Nguyễn Văn A")
                 .table-body
@@ -25,39 +25,39 @@ html(lang="en")
                   span.table-body__item Điện thoại
                   .table-body__item
                     input.input-text(type="text" name="phone" id="phone" placeholder="09xxxxxxxx")
-                .table-body
-                  span.table-body__item Giới tính
+                .table-body.tour
+                  span.table-body__item Tour
                   .table-body__item
-                    .male
-                      input.input-gender-radio(type="radio" name="gender-male" id="gender-male" checked)
-                      label(for="gender-male") Nam
-                    .female
-                      input.input-gender-radio(type="radio" name="gender-female" id="gender-female")
-                      label(for="gender-female") Nữ
-                .table-body.product
-                  span.table-body__item Sản phẩm
+                    select.select
+                      option(value="").select__item.active
+                        span.select__item--content Chọn tour
+                      option(value="10000000đ").select__item.active
+                        span.select__item--content Hà Nội - Hạ Long - Tuần Châu
+                      option(value="6000000đ").select__item
+                        span.select__item--content Hà Nội - Sapa
+                      option(value="3000000đ").select__item
+                        span.select__item--content Đà Nẵng, Hội An
+                      option(value="2000000đ").select__item
+                        span.select__item--content Buôn Mê Thuộc - Kontum
+                      option(value="3500000đ").select__item
+                        span.select__item--content TP. HCM - Nha Trang
+                      option(value="2500000đ").select__item
+                        span.select__item--content TP. HCM - Cần Thơ - Cà Mau
+                .table-body.customer-count
                   .table-body__item
-                    .select
-                      .select__item.active
-                        span.select__item--content  Iphone 13 Promax
-                      .select__item
-                        span.select__item--content Iphone 12
-                      .select__item
-                        span.select__item--content Iphone 11
-                      .select__item
-                        span.select__item--content Iphone 2
-                      .select__item
-                        span.select__item--content Iphone 1
-                      .select__item
-                        span.select__item--content Iphone X
-                      .select__item
-                        span.select__item--content Iphone 8
-                      .select__item
-                        span.select__item--content Iphone 7
-                .table-body
-                  span.table-body__item Số dự đoán
+                    .bordered-box
+                      .label Số lượng đoàn khách 
+                      .inputs
+                        .input
+                          label(for="adult") Người lớn
+                          input.input-text(type="number" name="adult" id="adult" placeholder="1")
+                        .input
+                          label(for="child") Trẻ em
+                          input.input-text(type="number" name="child" id="child" placeholder="0")
+                .table-body.note
+                  span.table-body__item Ghi chú
                   .table-body__item
-                    input.input-text(type="number" name="number" id="number" placeholder="Số dự đoán" value=5)
+                    textarea.input-textarea(type="textarea" name="note" id="note" placeholder="Ghi chú")
                 .table-body
                   .table-body__item.disable-border-bottom
                     button(type="submit") Đăng ký
