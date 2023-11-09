@@ -2,6 +2,35 @@
 @import "../mixins.scss";
 @import "../common.scss";
 
+* {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+
+  @include sm {
+    font-size: 16px;
+  }
+
+  @include md {
+    font-size: 16px;
+  }
+
+  @include lg {
+    font-size: 16px;
+  }
+
+  @include el {
+    font-size: 16px;
+  }
+
+  ;
+
+  @include eel {
+    font-size: 16px;
+  }
+
+  ;
+}
+
 html {
   width: 100vw;
   min-height: 100vh;
@@ -19,7 +48,99 @@ html {
 
       & section {
         width: 100%;
-        
+
+        & .content {
+          width: 100%;
+
+          & form {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 350px;
+
+            & h1 {
+              @include h1Text;
+              margin-bottom: $spacingBasicRem;
+              text-align: center;
+              color: #8a2be2;
+            }
+
+            & hr {
+              width: 100%;
+              height: 4px;
+              background-color: #0000ff;
+              margin-bottom: $haftSpacingBasicRem;
+
+              &:last-child {
+                margin-top: $haftSpacingBasicRem;
+              }
+            }
+
+            & table {
+
+              & tbody {
+                & tr {
+                  & td {
+                    & input {
+                      width: 100%;
+                      height: 35px;
+                      padding: 0 $spacingBasicRem;
+                      outline: none;
+
+                      &:hover {
+                        outline: none;
+                      }
+                    }
+                  }
+
+                  &:last-child {
+                    width: 100%;
+
+                    & td {
+                      padding-top: $haftSpacingBasicRem;
+
+                      & div {
+                        display: flex;
+                        justify-content: center;
+                        gap: $haftSpacingBasicRem;
+
+                        & span {
+                          font-style: italic;
+                        }
+                      }
+                    }
+                  }
+
+                  &.button {
+                    & td {
+                      & div {
+                        display: flex;
+                        justify-content: center;
+                        margin-top: $haftSpacingBasicRem;
+
+                        & button {
+                          height: 35px;
+                          border: 1px solid gray;
+                          outline: none;
+                          cursor: pointer;
+                          border-radius: 50px;
+                          padding: 0 $spacingBasicRem;
+
+                          &:hover {
+                            background-color: gray;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
   }

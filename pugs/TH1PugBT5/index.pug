@@ -9,4 +9,29 @@ html(lang="en")
     main
       section
         .content
-          
+          form(action="")
+            h1 Đăng nhập hệ thống
+            hr
+            table
+              tbody 
+                tr
+                  td 
+                    span Tên đăng nhập
+                  td
+                    input(type="text" name="username" id="username" placeholder="Nhập tên đăng nhập")
+                tr
+                  td
+                    span Mật khẩu
+                  td
+                    input(type="password" name="password" id="password" placeholder="Nhập mật khẩu")
+                tr.button
+                  td(colspan="2")
+                    div
+                      button(type="submit") Đăng nhập
+                tr
+                  td(colspan="2")
+                    div 
+                      span Quên mật khẩu
+                      span /
+                      span Đăng ký
+            hr
