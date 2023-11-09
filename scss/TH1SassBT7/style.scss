@@ -1,0 +1,213 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+@import "../common.scss";
+
+* {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+
+  @include sm {
+    font-size: 16px;
+  }
+
+  @include md {
+    font-size: 16px;
+  }
+
+  @include lg {
+    font-size: 16px;
+  }
+
+  @include el {
+    font-size: 16px;
+  }
+
+  ;
+
+  @include eel {
+    font-size: 16px;
+  }
+
+  ;
+}
+
+html {
+  width: 100vw;
+  min-height: 100vh;
+
+  body {
+    width: 100%;
+    height: 100%;
+    background-color: #ffedca;
+
+    main {
+      max-width: map-get($breakpoints, el);
+      width: 100%;
+      margin: 0 auto;
+      padding: $spacingBasicRem;
+
+      & section {
+        width: 100%;
+
+        & .content {
+          width: 100%;
+
+          & form {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 350px;
+
+            & h1 {
+              @include h1Text;
+              margin-bottom: $spacingBasicRem;
+              text-align: center;
+            }
+
+            & .table {
+              width: 100%;
+
+              & h1 {
+                @include h1Text;
+                text-align: center;
+                color: rgb(125, 56, 210);
+                margin-bottom: $spacingBasicRem;
+              }
+
+              & .table__content {
+                border: 1px solid gray;
+                width: 100%;
+
+                & .table-body {
+                  display: flex;
+
+                  &__item {
+                    height: 45px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    padding: 0px $spacingBasicRem;
+
+                    & .male {
+                      display: flex;
+                      align-items: center;
+                      gap: 10px;
+                      margin-right: 10px;
+                    }
+
+                    & .female {
+                      display: flex;
+                      align-items: center;
+                      gap: 10px;
+                    }
+
+                    &.flex-start {
+                      justify-content: flex-start;
+                      padding: 0px $spacingBasicRem;
+                    }
+                  }
+
+                  &__item:first-child {
+                    border-bottom: 1px solid gray;
+                    min-width: 130px;
+                    color: blue;
+
+                    &.disable-border-bottom {
+                      border-bottom: none;
+                    }
+                  }
+
+                  &__item:last-child {
+                    flex: 1;
+                    border-left: 1px solid gray;
+                    border-bottom: 1px solid gray;
+
+                    &.disable-border-bottom {
+                      border-bottom: none;
+                    }
+
+                    & input {
+                      width: 80%;
+                      height: 35px;
+                      border: none;
+                      padding: 0px $spacingBasicRem;
+                      outline: none;
+                      border-radius: 5px;
+                      max-width: 250px;
+
+                      &.input-address {
+                        max-width: 100%;
+                        width: 100%;
+                      }
+
+                      &.input-gender-radio {
+                        width: 20px;
+                        height: 20px;
+                      }
+                    }
+                  }
+
+                  &.product {
+                    height: 110px;
+
+                    & .table-body__item {
+                      height: 110px;
+                      overflow: hidden;
+
+                      & .select {
+                        height: 100px;
+                        width: 100%;
+                        overflow-x: hidden;
+                        overflow-y: scroll;
+                        border: 1px solid gray;
+                        border-radius: 5px;
+
+                        &__item {
+                          background-color: #fff;
+                          cursor: pointer;
+
+                          &:hover {
+                            background-color: #eee;
+                          }
+
+                          & span {
+                            display: block;
+                            padding: 5px;
+                          }
+
+                          &.active {
+                            background-color: rgb(69, 142, 247);
+                          }
+                        }
+                      }
+                    }
+                  }
+
+                  &:last-child {
+                    & .table-body__item {
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      border: none;
+
+                      & button {
+                        border: 1px solid gray;
+                        outline: none;
+                        padding: 5px 10px;
+                        border-radius: 5px;
+                        cursor: pointer;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

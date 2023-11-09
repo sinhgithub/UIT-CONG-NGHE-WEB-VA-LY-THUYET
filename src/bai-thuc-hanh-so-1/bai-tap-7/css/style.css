@@ -1,0 +1,220 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 12px;
+}
+@media (min-width: 576px) {
+  * {
+    font-size: calc(12px + 2px);
+  }
+}
+@media (min-width: 768px) {
+  * {
+    font-size: calc(12px + 4px);
+  }
+}
+@media (min-width: 992px) {
+  * {
+    font-size: calc(12px + 6px);
+  }
+}
+@media (min-width: 1200px) {
+  * {
+    font-size: calc(12px + 8px);
+  }
+}
+@media (min-width: 1400px) {
+  * {
+    font-size: calc(12px + 10px);
+  }
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+@media (min-width: 576px) {
+  * {
+    font-size: 16px;
+  }
+}
+@media (min-width: 768px) {
+  * {
+    font-size: 16px;
+  }
+}
+@media (min-width: 992px) {
+  * {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1200px) {
+  * {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1400px) {
+  * {
+    font-size: 16px;
+  }
+}
+
+html {
+  width: 100vw;
+  min-height: 100vh;
+}
+html body {
+  width: 100%;
+  height: 100%;
+  background-color: #ffedca;
+}
+html body main {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+html body main section {
+  width: 100%;
+}
+html body main section .content {
+  width: 100%;
+}
+html body main section .content form {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 350px;
+}
+html body main section .content form h1 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+@media (min-width: 576px) {
+  html body main section .content form h1 {
+    font-size: 1.5rem;
+  }
+}
+html body main section .content form .table {
+  width: 100%;
+}
+html body main section .content form .table h1 {
+  font-size: 1.4rem;
+  text-align: center;
+  color: rgb(125, 56, 210);
+  margin-bottom: 1rem;
+}
+@media (min-width: 576px) {
+  html body main section .content form .table h1 {
+    font-size: 1.5rem;
+  }
+}
+html body main section .content form .table .table__content {
+  border: 1px solid gray;
+  width: 100%;
+}
+html body main section .content form .table .table__content .table-body {
+  display: flex;
+}
+html body main section .content form .table .table__content .table-body__item {
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0px 1rem;
+}
+html body main section .content form .table .table__content .table-body__item .male {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 10px;
+}
+html body main section .content form .table .table__content .table-body__item .female {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+html body main section .content form .table .table__content .table-body__item.flex-start {
+  justify-content: flex-start;
+  padding: 0px 1rem;
+}
+html body main section .content form .table .table__content .table-body__item:first-child {
+  border-bottom: 1px solid gray;
+  min-width: 130px;
+  color: blue;
+}
+html body main section .content form .table .table__content .table-body__item:first-child.disable-border-bottom {
+  border-bottom: none;
+}
+html body main section .content form .table .table__content .table-body__item:last-child {
+  flex: 1;
+  border-left: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+html body main section .content form .table .table__content .table-body__item:last-child.disable-border-bottom {
+  border-bottom: none;
+}
+html body main section .content form .table .table__content .table-body__item:last-child input {
+  width: 80%;
+  height: 35px;
+  border: none;
+  padding: 0px 1rem;
+  outline: none;
+  border-radius: 5px;
+  max-width: 250px;
+}
+html body main section .content form .table .table__content .table-body__item:last-child input.input-address {
+  max-width: 100%;
+  width: 100%;
+}
+html body main section .content form .table .table__content .table-body__item:last-child input.input-gender-radio {
+  width: 20px;
+  height: 20px;
+}
+html body main section .content form .table .table__content .table-body.product {
+  height: 110px;
+}
+html body main section .content form .table .table__content .table-body.product .table-body__item {
+  height: 110px;
+  overflow: hidden;
+}
+html body main section .content form .table .table__content .table-body.product .table-body__item .select {
+  height: 100px;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+html body main section .content form .table .table__content .table-body.product .table-body__item .select__item {
+  background-color: #fff;
+  cursor: pointer;
+}
+html body main section .content form .table .table__content .table-body.product .table-body__item .select__item:hover {
+  background-color: #eee;
+}
+html body main section .content form .table .table__content .table-body.product .table-body__item .select__item span {
+  display: block;
+  padding: 5px;
+}
+html body main section .content form .table .table__content .table-body.product .table-body__item .select__item.active {
+  background-color: rgb(69, 142, 247);
+}
+html body main section .content form .table .table__content .table-body:last-child .table-body__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+html body main section .content form .table .table__content .table-body:last-child .table-body__item button {
+  border: 1px solid gray;
+  outline: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
