@@ -40,9 +40,9 @@ html {
 
           & tbody {
             & .tr-head {
-              height: 55px;
 
               & th {
+                height: 55px;
                 & span {
                   @include lg {
                     font-size: 0.85rem;

@@ -65,7 +65,7 @@ html body main section table {
   position: relative;
   z-index: 2;
 }
-html body main section table tbody .tr-head {
+html body main section table tbody .tr-head th {
   height: 55px;
 }
 @media (min-width: 992px) {
