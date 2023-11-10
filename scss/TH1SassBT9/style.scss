@@ -1,0 +1,111 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+@import "../common.scss";
+
+$colorTextHead: rgb(172, 105, 99);
+
+* {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+
+  @include sm {
+    font-size: 16px;
+  }
+
+  @include md {
+    font-size: 16px;
+  }
+
+  @include lg {
+    font-size: 16px;
+  }
+
+  @include el {
+    font-size: 16px;
+  }
+
+  ;
+
+  @include eel {
+    font-size: 16px;
+  }
+
+  ;
+}
+
+html {
+  width: 100vw;
+  min-height: 100vh;
+
+  body {
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+
+    & nav {
+      background-color: #00008b;
+      height: 50px;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: map-get($breakpoints, md);
+
+      &>ul {
+        display: flex;
+        align-items: center;
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        gap: 20px;
+
+        & li {
+          height: 50px;
+          display: flex;
+          align-items: center;
+          padding: 0 30px;
+          cursor: pointer;
+
+          &.wrapper {
+            position: relative;
+
+            &:hover>ul {
+              display: flex;
+            }
+
+            & ul {
+              position: absolute;
+              flex-direction: column;
+              background-color: #00008b;
+              top: 50px;
+              left: 0;
+              width: 220px;
+
+              & li:hover {
+                background-color: lightblue;
+              }
+
+              & li {
+                & a {
+                  display: block;
+                  width: 100%;
+                }
+              }
+
+              display: none;
+            }
+          }
+
+          &:hover>a {
+            color: #adff2f;
+          }
+
+          & a {
+            color: #ffd700;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}

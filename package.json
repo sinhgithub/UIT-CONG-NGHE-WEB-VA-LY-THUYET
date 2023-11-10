@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type":"module",
   "scripts": {
     "TH1PugBT1": "pug --watch ./pugs/TH1PugBT1/index.pug --out ./src/bai-thuc-hanh-so-1/bai-tap-1",
     "TH1SassBT1": "sass --no-source-map ./scss/TH1SassBT1/style.scss ./src/bai-thuc-hanh-so-1/bai-tap-1/css/style.css --watch",
